@@ -32,5 +32,10 @@ public class VanillaApplication {
 		return System.getenv();
 	}
 
+	@GetMapping("/status")
+	public String status() {
+		return "ok";
+	}
+
 
 }
